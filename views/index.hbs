@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<p>welcome to {{title}}</p>
+<hr>
+<p>I have a conditional statement</p>
+<p>
+{{# if condition }}
+    If condition is met
+    {{ else }}
+    If condition is not met
+{{/if}}
+</p>
+<hr>
+<p> I'm outputting a list:
+    <ul>
+    {{# each anyArray}}
+        <li>
+            {{ this }}
+        </li>
+    {{/each}}
+    </ul>
+</p>
